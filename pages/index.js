@@ -9,6 +9,7 @@ const Home = ({ products, bannerData }) => {
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
       <div className='products-heading'>
         <h2>Best Selling Products</h2>
+        <h3>Headphones</h3>
         <p>Speakers of many variations</p>
       </div>
       <div className='products-container'>
@@ -16,7 +17,27 @@ const Home = ({ products, bannerData }) => {
           <Product key={product._id} product={product} />
         ))}
       </div>
-      <FooterBanner footerBanner={bannerData && bannerData[0]} />
+
+      <div className='products-heading'>
+        <h3>Smartwatches</h3>
+      </div>
+      <div className='products-container'>
+        {products?.map((product) => (
+          <Product key={product._id} product={product} />
+        ))}
+      </div>
+
+      <div className='products-heading'>
+        <h3>Earpods</h3>
+        <p>Speakers of many variations</p>
+      </div>
+      <div className='products-container'>
+        {products?.map((product) => (
+          <Product key={product._id} product={product} />
+        ))}
+      </div>
+
+      <FooterBanner footerBanner={bannerData && bannerData[1]} />
     </>
   );
 };

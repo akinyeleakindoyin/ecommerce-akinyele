@@ -19,7 +19,7 @@ export default {
     },
     {
       name: 'slug',
-      title: 'slug',
+      title: 'Slug',
       type: 'slug',
       options: {
         source: 'name',
@@ -34,6 +34,11 @@ export default {
     {
       name: 'details',
       title: 'Details',
+      type: 'string',
+    },
+    {
+      name: 'category',
+      title: 'Category',
       type: 'string',
     },
   ],

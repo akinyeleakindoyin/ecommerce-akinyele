@@ -3,7 +3,17 @@ import Link from 'next/link';
 
 import { urlFor } from '../lib/client';
 
+// import { useStateContext } from '../context/StateContext';
+
 const HeroBanner = ({ heroBanner }) => {
+  // const { onAdd, product, qty, setShowCart } = useStateContext();
+
+  // const handleBuyNow = () => {
+  //   onAdd(product, qty);
+
+  //   setShowCart(true);
+  // };
+
   return (
     <div className='hero-banner-container'>
       <div>
